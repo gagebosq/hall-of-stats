@@ -73,5 +73,7 @@ CREATE TABLE IF NOT EXISTS Hitters (
 );
 
 
+UPDATE teams SET games_behind = 0
+                 WHERE games_behind is null;
 
 
