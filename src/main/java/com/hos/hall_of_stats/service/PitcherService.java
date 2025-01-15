@@ -21,4 +21,8 @@ public class PitcherService {
     public Pitcher savePitcher(Pitcher pitcher) {
         return pitcherRepository.save(pitcher);
     }
+
+    public Pitcher getPitcherByName(String name) {
+        return pitcherRepository.findByName(name);
+    }
 }

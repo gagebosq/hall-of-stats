@@ -21,4 +21,9 @@ public class TeamService {
     public Team saveTeam(Team team) {
         return teamRepository.save(team);
     }
+
+    public List<Team> getTeamByName(String name) {
+        return teamRepository.findByName(name);
+    }
+
 }
