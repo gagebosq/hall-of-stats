@@ -15,8 +15,9 @@ public class HallOfStatsApplication implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**")
-                .allowedOrigins("http://localhost:5173") // react URL
+                .allowedOrigins("http://192.0.0.2:5173") // react URL
                 .allowedOrigins("http://10.0.0.30:5173") // react URL
+                .allowedOrigins("http://localhost:5173") // react URL
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(true);
